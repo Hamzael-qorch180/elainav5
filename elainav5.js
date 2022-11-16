@@ -12260,11 +12260,10 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}twitter [url]
 ╠${sp} ${prefix}twittermp3 [url]
 ╠${sp} ${prefix}tiktok [url]
+╠${sp} ${prefix}play [link]
 ╠${sp} ${prefix}tiktokaudio[url]
 ╠${sp} ${prefix}tiktoknowm [url]
 ╠${sp} ${prefix}mediafire [url]
-╠${sp} ${prefix}ytmp3 [url|quality]
-╠${sp} ${prefix}ytmp4 [url|quality]
 ╠${sp} ${prefix}getmusic [yt link]
 ╠${sp} ${prefix}getvideo [yt link]
 ╠${sp} ${prefix}gitclone [repo link]
@@ -12284,7 +12283,6 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}cecanvietnam
 ╠${sp} ${prefix}kayes
 ╠${sp} ${prefix}notnot
-╠${sp} ${prefix}play [query]
 ╠${sp} ${prefix}song [query]
 ╠${sp} ${prefix}yts [query]
 ╠${sp} ${prefix}lyrics [query]
