@@ -32,7 +32,7 @@ global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
 zenzkey = '9d696cae52be'
-lolkey = '2f73fe5296d00f4fb394a468'
+lolkey = '380f33983d5719bf2aaa441f'
 frkey = 'kZgLGZbX'
 apidanz = '92b0a75k6f'
 ckey = 'xPxsaElx'

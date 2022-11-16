@@ -6488,6 +6488,20 @@ cersex = (`「 *Cerita Sex* 」
 XeonBotInc.sendImage(m.chat, thumb, cersex, fkontak)
 }
 break
+case 'cerhantu': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+let hantu = await fetchJson(`https://api.lolhuman.xyz/api/ceritahoror?apikey=${lolkey}`)
+cers = hantu.result
+jud = cers.title
+thumb = await getBuffer(cers.thumbnail)
+cer = cers.desc
+cerhant = (`「 *Cerita Hantu* 」
+*Judul* : ${jud}
+*Cerita* : ${cer}`)
+XeonBotInc.sendImage(m.chat, thumb, cerhant, fkontak)
+}
+break
 case 'cerpen': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
