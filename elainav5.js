@@ -6477,7 +6477,6 @@ break
 case 'cersex': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (!text) throw `Contoh penggunaan:\n${prefix + command} matius 7`
 let sex = await fetchJson(`https://zenzapis.xyz/randomtext/cersex?apikey=${zenzkey}`)
 cer = sex.result
 jud = cer.Judul
@@ -6492,7 +6491,6 @@ break
 case 'cerpen': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (!text) throw `Contoh penggunaan:\n${prefix + command} matius 7`
 let pen = await fetchJson(`https://zenzapis.xyz/randomtext/cerpen?apikey=${zenzkey}`)
 cer = pen.result
 jud = cer.Judul
