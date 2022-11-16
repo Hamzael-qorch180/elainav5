@@ -3652,9 +3652,9 @@ if (!q1 && !q2 && !q3) return reply(`Example : ${prefix}${command} 1|22|2023`)
 	yabai = await fetchJson(`https://caliphapi.com/api/countdown?tanggal=${1}&bulan=${q2}&tahun=${q3}&apikey=${ckey}`)
     kenyot = yabai.result
 	 reply(`「 *HITUNG MUNDUR* 」
-*Tanggal* : ${m1}
-*Bulan* : ${m2}
-*Tahun* : ${m3}
+*Tanggal* : ${q1}
+*Bulan* : ${q2}
+*Tahun* : ${q3}
 *Hitung Mundur* : ${kenyot}`)
 break
 case 'asahotak':
