@@ -254,6 +254,7 @@ let tebaklagu = db.data.game.tebaklagu = []
 let _family100 = db.data.game.family100 = []
 let kuismath = db.data.game.math = []
 let tebakgambar = db.data.game.tebakgambar = []
+let asahotak = db.data.game.asahotak = []
 let tebakkata = db.data.game.tebakkata = []
 let caklontong = db.data.game.lontong = []
 let caklontong_desk = db.data.game.lontong_desk = []
@@ -309,7 +310,6 @@ const AntiLinkTwitter = m.isGroup ? ntilinktwt.includes(from) : false
 const AntiLinkAll = m.isGroup ? ntilinkall.includes(from) : false
 const antiWame = m.isGroup ? ntwame.includes(from) : false
 const antiToxic = m.isGroup ? nttoxic.includes(from) : false
-const { menFess, menFes, conFess, conFes } = m.isGroup ? nttoxic.includes(from) : false
 const antiVirtex = m.isGroup ? ntvirtex.includes(from) : false
 const AntiNsfw = m.isGroup ? ntnsfw.includes(from) : false
 const isAutoStick = _autostick.includes(from)
@@ -720,17 +720,6 @@ if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XeonBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} was kicked because of using bad words in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:fkontak})}
-}
-if (menFess)
-if (conFess)
-if (conFes)
-if (menFes)
-if (bad.includes(messagesD)) {
-tos = ['Bad words detected, dont use bad words for this feature!', 'You have been warned to not using bad words for this feature!']
-reply(tos)
-if (m.text) {
-kice = m.sender
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${kice.split("@")[0]} Do not using bad words!`, contextInfo:{mentionedJid:[kice]}}, {quoted:fkontak})}
 }
 //antilink youtube video by xeon
 if (AntiLinkYoutubeVid)
@@ -3299,10 +3288,10 @@ if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (!q) return reply(`Example : ${command} _options_\nOptions : close or open`)
 if (args[0] == "close") {
-conn.groupSettingUpdate(from, 'announcement')
+XeonBotInc.groupSettingUpdate(from, 'announcement')
 reply(`Sukses mengizinkan hanya admin yang dapat mengirim pesan ke grup ini`)
 } else if (args[0] == "open") {
-conn.groupSettingUpdate(from, 'not_announcement')
+XeonBotInc.groupSettingUpdate(from, 'not_announcement')
 reply(`Sukses mengizinkan semua peserta dapat mengirim pesan ke grup ini`)
 } else {
 reply(`Kirim perintah #${command} _options_\nOptions : close & open\nContoh : #${command} close`)
@@ -3622,7 +3611,6 @@ XeonBotInc.sendImage(m.chat, wrpic, winratenya, fkontak)
 case 'confes': case 'menfes': case 'confess': case 'menfess':
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-	nttoxic.push(from)
 	var mon = args.join(' ')
             var m1 = mon.split("|")[0]
             var m2 = mon.split("|")[1]
@@ -3638,19 +3626,61 @@ if (nyz.isValid == false) return reply("Invalid number")
 	photoprofile = await getBuffer(ppuser)
 	suksesnya = (`「 *MENFESS* 」
 *Time* : ${time}
-*Recipient's number** : ${m1}
+*Recipient's number* : ${m1}
 *Sender's name* : ${m2}
 *Secret Message* : ${m3}
 
 Success Sent Secret Message To ${m1}`)
     menfesnya = (`「 *MENFESS* 」
 *Time* : ${time}
-*Recipient's name* : ${m1}
+*Recipient's number* : ${m1}
+*Sender's name* : ${m2}
 *Secret Message* : ${m3}
 
 You can reply to this message by typing menfess number|name|secret message`)
 XeonBotInc.sendMessage(nyz.phoneNumber.split("+")[1] + "@s.whatsapp.net", { image: photoprofile, caption: menfesnya},{quoted:fkontak})
 XeonBotInc.sendImage(m.chat, photoprofile, suksesnya, fkontak)
+break
+case 'hitungmundur':
+   if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+	var mon = args.join(' ')
+            var q1 = mon.split("|")[0]
+            var q2 = mon.split("|")[1]
+            var q3 = mon.split("|")[2]
+if (!q1 && !q2 && !q3) return reply(`Example : ${prefix}${command} 1|22|2023`)
+	yabai = await fetchJson(`https://caliphapi.com/api/countdown?tanggal=${1}&bulan=${q2}&tahun=${q3}&apikey=${ckey}`)
+    kenyot = yabai.result
+	 reply(`「 *HITUNG MUNDUR* 」
+*Tanggal* : ${m1}
+*Bulan* : ${m2}
+*Tahun* : ${m3}
+*Hitung Mundur* : ${kenyot}`)
+break
+case 'asahotak':
+   if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+	if (asahotak.hasOwnProperty(m.sender.split('@')[0])) return replay("There are still unfinished sessions!")
+	yabai = await fetchJson(`https://caliphapi.com/api/asahotak?apikey=${ckey}`)
+    soal = yabai.soal
+	jawaban = yabai.jawaban
+ 	bantuan = yabai.bantuan
+	 memek = (`「 *ASAH OTAK* 」
+*Soal* : ${soal}
+*Bantuan* : ${bantuan}`)
+jawabb = (`「 *ASAH OTAK* 」
+*Soal* : ${soal}
+*Jawaban* : ${jawaban}
+*Bantuan* : ${bantuan}`)
+XeonBotInc.sendImage(m.chat, memek, fkontak).then(() => {
+asahotak[m.sender.split('@')[0]] = jawaban.toLowerCase()
+})
+await sleep(60000)
+if (asahotak.hasOwnProperty(m.sender.split('@')[0])) {
+console.log("Answer: " + jawaban)
+XeonBotInc.sendMessage(m.chat, jawabb, fkontak)
+delete asahotak[m.sender.split('@')[0]]
+}
 break
 			case 'listgece': {
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
@@ -3996,7 +4026,7 @@ if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!AntiNsfw) return reply(mess.nsfw)
 reply(mess.wait)
-axios.get(`https://caliphapi.com/api/nsfwcum?apikey=xPxsaElx`)
+axios.get(`https://caliphapi.com/api/nsfwcum?apikey=${ckey}`)
 .then(({data}) => {
 XeonBotInc.sendImage(m.chat, data.url, mess.success, fkontak)
 })
@@ -6011,7 +6041,7 @@ case 'darkjokes':{
 if (isBan) return reply(mess.ban)
 if (isBanChat) return reply(mess.banChat)
 reply(mess.wait)
-var funne = await getBuffer(`https://caliphapi.com/api/loli?apikey=xPxsaElx`)
+var funne = await getBuffer(`https://caliphapi.com/api/loli?apikey=${ckey}`)
 teks = "yhaha hayyuk"
 XeonBotInc.sendMessage(m.chat, { image : { url : funne }, caption: teks }, { quoted : m })
 }
@@ -6434,7 +6464,7 @@ case 'alkitab': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!text) throw `Contoh penggunaan:\n${prefix + command} matius 7`
-let res = await fetchJson(`https://caliphapi.com/api/alkitabsearch?q=${text}&apikey=xPxsaElx`)
+let res = await fetchJson(`https://caliphapi.com/api/alkitabsearch?q=${text}&apikey=${ckey}`)
 ayatnya = res.data.ayat
 isinya = res.data.isi
 linknya = res.data.link
@@ -6442,6 +6472,49 @@ replay(`「 *Alkitab* 」
 *Ayat* : ${ayatnya}
 *Isi* : ${isinya}
 *Link* : ${linknya}`)
+}
+break
+case 'zenzkey': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+	if (!text) throw `Example : ${prefix}${command} your_apikey`
+let zenzs = await fetchJson(`https://zenzapis.xyz/user/cekapi?apikey=${text}`)
+res = zenzs.message
+id = res.id
+created = res.created
+updated = res.updated
+firstname = res.firstname
+lastname = res.lastname
+email = res.email
+username = res.username
+apikey = res.apiKey
+todayh = res.today_hit
+totalh = res.total_hit
+status = res.status
+premium = res.premium
+exp = res.premium_expired
+active = res.active
+location = res.location
+bio = res.biodata
+profile = await getBuffer(res.profile_image)
+capt = (`「 *Zenz APIs* 」
+*ID* : ${id}
+*Created* : ${created}
+*Updated* : ${updated}
+*First Name* : ${firstname}
+*Last Name* : ${lastname}
+*Email* : ${email}
+*Username* : ${username}
+*Apikey* : ${apikey}
+*Today Hit* : ${todayh}
+*Total Hit* : ${totalh}
+*Status* : ${status}
+*Premium* : ${premium}
+*Premium Expired* : ${exp}
+*Active* : ${active}
+*Location* : ${location}
+*Bio* : ${bio}`)
+XeonBotInc.sendImage(m.chat, profile, capt, fkontak)
 }
 break
 case 'jadwalsalat': {
@@ -6465,6 +6538,27 @@ replay(`「 *Jadwal Sholat* 」
 *Ashar* : ${ashar}
 *Maghrib* : ${magrib}
 *Isya* : ${isya}`)
+}
+break
+case 'ttstalk': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!text) throw `Contoh penggunaan:\n${prefix + command} nimeuwu`
+let ttstalk = await fetchJson(`https://zenzapis.xyz/stalker/tiktok?username=${text}&apikey=${zenzkey}`)
+res = ttstalk.result
+profile = await getBuffer(res.profile)
+name = res.name
+username = res.username
+folls = res.followers
+follg = res.following
+desc = res.description
+capk = (`「 *TikTok Stalk* 」
+*Name* : ${name}
+*Username* : ${username}
+*Followers* : ${folls}
+*Following* : ${follg}
+*Description* : ${desc}`)
+XeonBotInc.sendImage(m.chat, profile, capk, fkontak)
 }
 break
 case 'jadwaltv': {
@@ -6536,25 +6630,6 @@ if (typeof mathjs.evaluate(qsd) !== 'number') {
 reply('Error')
 } else {
 reply(`「 *Kalkulator* 」\n\n*•> Hitung :* ${qsd}\n*•> Hasil :* ${mathjs.evaluate(qsd.replace(/×/g, "*").replace(/x/g, "*").replace(/÷/g, "/"))}`)
-}
-break
-case 'family100': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if ('family100'+m.chat in _family100) {
-    reply('Masih Ada Sesi Yang Belum Diselesaikan!')
-    throw false
-}
-let anu = await fetchJson('https://raw.githubusercontent.com/BochilTeam/database/master/games/family100.json')
-let random = anu[Math.floor(Math.random() * anu.length)]
-let hasil = `*Jawablah Pertanyaan Berikut :*\n${random.soal}\n\nTerdapat *${random.jawaban.length}* Jawaban ${random.jawaban.find(v => v.includes(' ')) ? `(beberapa Jawaban Terdapat Spasi)` : ''}`.trim()
-_family100['family100'+m.chat] = {
-    id: 'family100'+m.chat,
-    pesan: await XeonBotInc.sendText(m.chat, hasil, fkontak),
-    ...random,
-    terjawab: Array.from(random.jawaban, () => false),
-    hadiah: 6,
-}
 }
 break
  case 'listonline': case 'liston': {
@@ -12197,6 +12272,8 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}zippyshare [url]
 ╠═══════✪「 SEARCH 」	
 ╠${sp} ${prefix}searchgc [query]
+╠${sp} ${prefix}zenzkey [check]
+╠${sp} ${prefix}ttstalk [query]
 ╠${sp} ${prefix}ffstalker [query]
 ╠${sp} ${prefix}mlstalker [query]
 ╠${sp} ${prefix}getsticker [query]
@@ -12433,6 +12510,7 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}nwaifu
 ╠${sp} ${prefix}milf
 ╠═══════✪「 FUN 」
+╠${sp} ${prefix}hitungmundur
 ╠${sp} ${prefix}pahala
 ╠${sp} ${prefix}winrateml
 ╠${sp} ${prefix}how [text
@@ -12669,7 +12747,6 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}caklontong
 ╠${sp} ${prefix}siapakahaku
 ╠${sp} ${prefix}truth
-╠${sp} ${prefix}family100
 ╠${sp} ${prefix}dare
 ╠${sp} ${prefix}tictactoe
 ╠${sp} ${prefix}delttt
