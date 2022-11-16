@@ -54,7 +54,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['elainav4-xyssystem','Safari','1.0.0'],
+        browser: ['elainav5','Safari','1.0.0'],
         auth: state
     })
 
@@ -81,7 +81,7 @@ async function startXeonBotInc() {
         if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(XeonBotInc, mek, store)
-        require("./elainav4")(XeonBotInc, m, chatUpdate, store)
+        require("./elainav5")(XeonBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
