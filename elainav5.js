@@ -9866,7 +9866,7 @@ if (isBanChat) return reply(mess.banChat)
 			case 'allfeatures': case 'allfeature':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-return reply (`This Bot Included 700+ Features !!`)
+return reply (`This bot has 900+ features that can be used for free for all users without premium`)
 break
             case 'manga2':
                if (isBan) return reply(mess.ban)	 			
@@ -11732,6 +11732,8 @@ let kocak = (`┌─────❖
 └┬──────────────── ⳹
    │✑  Type allmenu for all features
    │✑  Dont forget to type owner too
+   │✑  This bot has 900+ features that can be used
+   │✑  for free for all users without premium
    └─────────────┈ ⳹
 ┌───────────────❖ 
 │「 *Thanks To* 」
