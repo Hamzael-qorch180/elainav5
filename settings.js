@@ -31,7 +31,7 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-zenzkey = '6daa8900c90b'
+zenzkey = '9d696cae52be'
 lolkey = '2f73fe5296d00f4fb394a468'
 frkey = 'kZgLGZbX'
 apidanz = '92b0a75k6f'
