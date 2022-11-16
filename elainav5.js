@@ -3672,13 +3672,13 @@ jawabb = (`「 *ASAH OTAK* 」
 *Soal* : ${soal}
 *Jawaban* : ${jawaban}
 *Bantuan* : ${bantuan}`)
-XeonBotInc.sendImage(m.chat, memek, fkontak).then(() => {
+XeonBotInc.sendMessage(from, { text: memek, quoted: fkontak}).then(() => {
 asahotak[m.sender.split('@')[0]] = jawaban.toLowerCase()
 })
 await sleep(60000)
 if (asahotak.hasOwnProperty(m.sender.split('@')[0])) {
 console.log("Answer: " + jawaban)
-XeonBotInc.sendMessage(m.chat, jawabb, fkontak)
+XeonBotInc.sendMessage(from, { text: jawabb, quoted: fkontak})
 delete asahotak[m.sender.split('@')[0]]
 }
 break
@@ -6474,6 +6474,39 @@ replay(`「 *Alkitab* 」
 *Link* : ${linknya}`)
 }
 break
+case 'cersex': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!text) throw `Contoh penggunaan:\n${prefix + command} matius 7`
+let sex = await fetchJson(`https://zenzapis.xyz/randomtext/cersex?apikey=${zenzkey}`)
+cer = sex.result
+jud = cer.Judul
+thumb = await getBuffer(cer.Thumb)
+cer = cer.Cerita
+cersex = (`「 *Cerita Sex* 」
+*Judul* : ${jud}
+*Cerita* : ${cer}`)
+XeonBotInc.sendImage(m.chat, thumb, cersex, fkontak)
+}
+break
+case 'cerpen': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (!text) throw `Contoh penggunaan:\n${prefix + command} matius 7`
+let pen = await fetchJson(`https://zenzapis.xyz/randomtext/cerpen?apikey=${zenzkey}`)
+cer = pen.result
+jud = cer.Judul
+pen = cer.Penulis
+sum = cer.sumber
+cer = cer.cerita
+cersex = (`「 *Cerita Pendek* 」
+*Judul* : ${jud}
+*Penulis* : ${pen}
+*Sumber* : ${sum}
+*Cerita* : ${cer}`)
+XeonBotInc.sendMessage(from, { text: cersex, quoted: fkontak})
+}
+break
 case 'zenzkey': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -6559,19 +6592,6 @@ capk = (`「 *TikTok Stalk* 」
 *Following* : ${follg}
 *Description* : ${desc}`)
 XeonBotInc.sendImage(m.chat, profile, capk, fkontak)
-}
-break
-case 'jadwaltv': {
-if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!text) throw `Contoh penggunaan:\n${prefix + command} gtv`
-let jad = await fetchJson(`https://zenzapis.xyz/searching/jadwaltv?query=${text}&apikey=${zenzkey}`)
-restv = jad.result.jadwal
-acara = restv.acara
-waktuacara = restv.time
-replay(`「 *Jadwal TV* 」
-*Acara* : ${acara}
-*Waktu* : ${waktuacara}`)
 }
 break
 case 'culik':
@@ -12276,7 +12296,6 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}ffstalker [query]
 ╠${sp} ${prefix}mlstalker [query]
 ╠${sp} ${prefix}getsticker [query]
-╠${sp} ${prefix}jadwaltv [query]
 ╠${sp} ${prefix}cecanindo
 ╠${sp} ${prefix}cecanchina
 ╠${sp} ${prefix}cecanthailand
