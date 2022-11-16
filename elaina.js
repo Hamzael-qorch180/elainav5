@@ -12,7 +12,21 @@ const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 const moment = require('moment-timezone')
-
+console.log(`================================================================================
+=        ==  ===========  =====    ==  =======  =====  =====  ====  ==         =
+=  ========  ==========    =====  ===   ======  ====    ====  ====  ==  ========
+=  ========  =========  ==  ====  ===    =====  ===  ==  ===  ====  ==  ========
+=  ========  ========  ====  ===  ===  ==  ===  ==  ====  ==  ====  ==  =    ===
+=      ====  ========  ====  ===  ===  ===  ==  ==  ====  ==   ==   ==   ===  ==
+=  ========  ========        ===  ===  ====  =  ==        ===  ==  ===  =====  =
+=  ========  ========  ====  ===  ===  =====    ==  ====  ===  ==  ==========  =
+=  ========  ========  ====  ===  ===  ======   ==  ====  ====    ====  ====  ==
+=        ==        ==  ====  ==    ==  =======  ==  ====  =====  =======     ===
+================================================================================`)
+await sleep(2500)
+console.log(`Loading System...`)
+await sleep(1500)
+console.log(`Starting...`)
 var low
 try {
   low = require('lowdb')
