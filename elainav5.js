@@ -12542,6 +12542,9 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}milf
 ╠═══════✪「 FUN 」
 ╠${sp} ${prefix}hitungmundur
+╠${sp} ${prefix}cerhantu
+╠${sp} ${prefix}cersex
+╠${sp} ${prefix}cerpen
 ╠${sp} ${prefix}pahala
 ╠${sp} ${prefix}winrateml
 ╠${sp} ${prefix}how [text
