@@ -12745,6 +12745,7 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}sound161
 ╠══════✪「 GAME 」
 ╠${sp} ${prefix}caklontong
+╠${sp} ${prefix}asahotak
 ╠${sp} ${prefix}siapakahaku
 ╠${sp} ${prefix}truth
 ╠${sp} ${prefix}dare
