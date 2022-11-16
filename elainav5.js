@@ -6477,11 +6477,11 @@ break
 case 'cersex': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-let sex = await fetchJson(`https://zenzapis.xyz/randomtext/cersex?apikey=${zenzkey}`)
-cer = sex.result
-jud = cer.Judul
-thumb = await getBuffer(cer.Thumb)
-cer = cer.Cerita
+let sexx = await fetchJson(`https://zenzapis.xyz/randomtext/cersex?apikey=${zenzkey}`)
+cers = sexx.result
+jud = cers.Judul
+thumb = await getBuffer(cers.Thumb)
+cer = cers.Cerita
 cersex = (`「 *Cerita Sex* 」
 *Judul* : ${jud}
 *Cerita* : ${cer}`)
@@ -6499,7 +6499,7 @@ sum = cer.sumber
 cer = cer.cerita
 cersex = (`「 *Cerita Pendek* 」
 *Judul* : ${jud}
-*Penulis* : ${pen}
+*Penulis* : ${pen} 
 *Sumber* : ${sum}
 *Cerita* : ${cer}`)
 XeonBotInc.sendMessage(from, { text: cersex, quoted: fkontak})
