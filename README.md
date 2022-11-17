@@ -3,7 +3,7 @@
 <h1 align="center">
 𝒆𝒍𝒂𝒊𝒏𝒂𝒗𝟓<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/b677751ee18e8ce542499.jpg" />
+<img src="https://telegra.ph/file/868d2870a11a5f77fe66b.jpg" />
 </p>
 
 <p align="center">
@@ -41,7 +41,7 @@
 ### 📮 Terms & conditions
 1. Don't sell this script!
 2. Appreciate the Developer, don't admit that you are the developer!
-3. if you have this script without obfuscated code then use it wisely, don't sell/claim to be a developer and don't share it arbitrarily!
+3. If you have this script without obfuscated code then use it wisely, don't sell/claim to be a developer and don't share it arbitrarily!
 4. Don't misuse this script!
 
 You are a developer?
