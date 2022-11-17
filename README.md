@@ -36,6 +36,19 @@
 </p>
 
 -------
+
+#
+### 📮 Terms & conditions
+1. Don't sell this script!
+2. Appreciate the Developer, don't admit that you are the developer!
+3. if you have this script without obfuscated code then use it wisely, don't sell/claim to be a developer and don't share it arbitrarily!
+4. Don't misuse this script!
+
+You are a developer?
+Understand the basics of nodejs?
+Can you help me make this script?
+Let's collaborate!
+-------
 ## ```Let's be friends !```
 <p align="center">
 <a href="https://wa.me/6281338302495"><img src="https://img.shields.io/badge/-CONTACT%20XYLAA-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
