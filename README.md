@@ -71,7 +71,7 @@ Donate me if you want :)
 
 - [`BOT SUPPORT GROUP`](https://chat.whatsapp.com/E7d7j8RzW9lCVn1xS6UEjx)
 
-#### ADVANTAGES round_pushpin
+#### ADVANTAGES 📍
 | Advantages | Check |
 |--------|--------|
 | **Fast Response** |[✔️](https://github.com/RavensVenix) |
@@ -80,7 +80,7 @@ Donate me if you want :)
 | **Button template** |[✔️](https://github.com/RavensVenix) |
 | **Multi Device** |[✔️](https://github.com/RavensVenix) |
 ---------
-#### FEATURES round_pushpin
+#### FEATURES 📍
 | Features | Check |
 |--------|--------|
 | **Downloader** |[✔️](https://github.com/RavensVenix) |
