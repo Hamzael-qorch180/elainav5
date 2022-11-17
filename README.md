@@ -29,6 +29,13 @@
 
 -------
 
+<h3 align="center">Made by :</h3>
+<p align="center">
+  <a href="https://github.com/saipulanuar"><img src="https://github.com/RavensVenix.png?size=128" height="128" width="128" /></a>
+  <a href="https://github.com/nurutomo"><img src="https://github.com/DGXeon.png?size=128" height="128" width="128" /></a>
+</p>
+
+-------
 ## ```Let's be friends !```
 <p align="center">
 <a href="https://wa.me/6281338302495"><img src="https://img.shields.io/badge/-CONTACT%20XYLAA-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
