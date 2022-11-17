@@ -3,7 +3,7 @@
 <h1 align="center">
 𝒆𝒍𝒂𝒊𝒏𝒂𝒗𝟓<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/868d2870a11a5f77fe66b.jpg?size=128" height="128" width="128" />
+<img src="https://telegra.ph/file/868d2870a11a5f77fe66b.jpg?size=350" height="128" width="128" />
 </p>
 
 <p align="center">
