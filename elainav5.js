@@ -12031,6 +12031,8 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}shutdown
 ╠${sp} ${prefix}restart
 ╠${sp} ${prefix}self
+╠${sp} ${prefix}jadibot
+╠${sp} ${prefix}spamcall
 ╠${sp} ${prefix}allfeature
 ╠${sp} ${prefix}public
 ╠${sp} ${prefix}antitag
