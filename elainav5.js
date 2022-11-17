@@ -74,10 +74,6 @@ const { hentai } = require('./lib/scraper2.js')
 const { stalkff } = require("./lib/stalk-ff")
 const { stalkml } = require("./lib/stalk-ml")
 const { jadibot, listJadibot } = require('./lib/jadibot')
-// database virtex
-const { philipss } = require('./lib/virtex/philips')
-const { viruss } = require('./lib/virtex/virus')
-const { ngazaap } = require('./lib/virtex/ngazap')
 virgamm = fs.readFileSync(`./src/virgam yg ganas.jpeg`)
 virgam = fs.readFileSync(`./virus/image/deden.jpeg`)
 moment.tz.setDefault('Asia/Jakarta').locale("id");
@@ -12598,6 +12594,11 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}naruto
 ╠${sp} ${prefix}uniform
 ╠${sp} ${prefix}asuna
+╠${sp} ${prefix}miku
+╠${sp} ${prefix}yuki
+╠${sp} ${prefix}hestia
+╠${sp} ${prefix}tsunade
+╠${sp} ${prefix}sasuke
 ╠${sp} ${prefix}anna
 ╠${sp} ${prefix}chitoge
 ╠${sp} ${prefix}cosplay
