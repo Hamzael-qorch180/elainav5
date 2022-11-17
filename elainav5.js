@@ -71,8 +71,9 @@ const { lolkey } = JSON.parse(fs.readFileSync('./lolkey.js'))
 const { zenzkey } = JSON.parse(fs.readFileSync('./zenzkey.js'))
 const { frkey } = JSON.parse(fs.readFileSync('./frkey.js'))
 const { hentai } = require('./lib/scraper2.js')
-const { stalkff } = require("./lib/stalk-ff");
-const { stalkml } = require("./lib/stalk-ml");
+const { stalkff } = require("./lib/stalk-ff")
+const { stalkml } = require("./lib/stalk-ml")
+const { jadibot, listJadibot } = require('./lib/jadibot')
 virgamm = fs.readFileSync(`./src/virgam yg ganas.jpeg`)
 virgam = fs.readFileSync(`./virus/image/deden.jpeg`)
 moment.tz.setDefault('Asia/Jakarta').locale("id");
@@ -5283,6 +5284,30 @@ tes = await fetchJson (`https://megayaa.herokuapp.com/api/translate?to=en&kata=$
 Infoo = tes.info
 Detek = tes.translate
 replay(`🌐Translate : ${Detek}\n📘Results : ${Infoo}`)
+}
+break
+case 'jadibot': {
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (isGroup) return reply('Please Private Chat.')
+jadibot(XeonBotInc, msg, from)
+}
+break
+case 'listjadibot':
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (isGroup) return reply('Please Private Chat.')
+try {
+let user = [... new Set([...global.conns.filter(XeonBotInc => XeonBotInc.user).map(XeonBotInc => XeonBotInc.user)])]
+te = "*List Jadibot*\n\n"
+for (let i of user){
+let y = await XeonBotInc.decodeJid(i.id)
+te += " × User : @" + y.split("@")[0] + "\n"
+te += " × Name : " + i.name + "\n\n"
+}
+XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:msg})
+} catch (err) {
+reply(`Belum Ada User Yang Jadibot`)
 }
 break
 case 'spamcall':{
