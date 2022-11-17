@@ -57,11 +57,11 @@ Donate me if you want :)
 
 ## `SETTINGS`
 
-- [CHANGE OWNER NUMBER VCARD](https://github.com/RavensVenix/elainav4-zyss/blob/master/settings.js#L58)
-- [CHANGE OWNER NUMBER MENU](https://github.com/RavensVenix/elainav4-zyss/blob/master/settings.js#L65)
-- [CHANGE OWNER NUMBER TAG](https://github.com/RavensVenix/elainav4-zyss/blob/master/settings.js#L66)
-- [CHANGE OWNER NAME](https://github.com/RavensVenix/elainav4-zyss/blob/master/settings.js#L59)
-- [CHANGE BOT NAME](https://github.com/RavensVenix/elainav4-zyss/blob/master/settings.js#L67)
+- [CHANGE OWNER NUMBER VCARD](https://github.com/RavensVenix/elainav5/blob/master/settings.js#L58)
+- [CHANGE OWNER NUMBER MENU](https://github.com/RavensVenix/elainav5/blob/master/settings.js#L65)
+- [CHANGE OWNER NUMBER TAG](https://github.com/RavensVenix/elainav5/blob/master/settings.js#L66)
+- [CHANGE OWNER NAME](https://github.com/RavensVenix/elainav5/blob/master/settings.js#L59)
+- [CHANGE BOT NAME](https://github.com/RavensVenix/elainav5/blob/master/settings.js#L67)
 
 ## ` BUILDPACKS`
 
@@ -70,7 +70,7 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RavensVenix/elainav4-zyss/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RavensVenix/elainav5/)
 
 # Install Manually 👇
 ## `Requirements`
@@ -81,8 +81,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/RavensVenix/elainav4-zyss.git
-cd elainav3-xyssystem
+git clone https://github.com/RavensVenix/elainav5.git
+cd elainav5
 
 npm start
 ```
@@ -98,8 +98,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/RavensVenix/elainav4-zyss
-cd elainav3-xyssystem
+git clone https://github.com/RavensVenix/elainav5
+cd elainav5
 npm start
 ```
 ## `For VPS`
@@ -110,8 +110,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagrmagick
 apt install bash
-git clone https://github.com/RavensVenix/elainav4-zyss
-cd elainav4-zyss
+git clone https://github.com/RavensVenix/elainav5
+cd elainav5
 npm start
 ```
 ## `For 24/7 Activation (Termux)`
