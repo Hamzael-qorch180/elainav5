@@ -5338,118 +5338,135 @@ reply(data.logs)
 }
 break
 case 'asuna':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/asuna?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/asuna?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'miku':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/miku?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/miku?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'yuki':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/yuki?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/yuki?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
-case 'hestia':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/hestia?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+case 'hestia': 
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/hestia?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'tsunade':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/tsunade?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/tsunade?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'sasuke':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/sasuke?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/sasuke?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'anna':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://api.zeeoneofc.xyz/api/anime/anna?apikey=5Cd8U3tG`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://api.zeeoneofc.xyz/api/anime/anna?apikey=5Cd8U3tG`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'chitoge':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/chitoge?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/chitoge?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'cosplay':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://kannxapi.herokuapp.com/api/randomimage/cosplay`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://kannxapi.herokuapp.com/api/randomimage/cosplay`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'elaina':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/elaina?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/elaina?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'emilia':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/emilia?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/emilia?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'gremory':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/gremory?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/gremory?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'kaguya':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/shinomiya?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/shinomiya?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'kotori':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/kotori?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/kotori?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'cogan':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/cogan2?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/cogan2?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'kurumi':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/kurumi?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/kurumi?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'mikasa':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/mikasa?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/mikasa?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
-
 case 'rize':
-m.reply(mess.wait)						
-teks = mess.success
-buffer = `https://revita.herokuapp.com/api/wallpaper/rize?apikey=ApiRevita`
-XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+reply(mess.wait)
+anu = await getBuffer(`https://revita.herokuapp.com/api/wallpaper/rize?apikey=ApiRevita`)
+XeonBotInc.sendMessage(m.chat, { image: anu, caption: mess.success }, { quoted: fkontak}).catch((err) => m.reply('Maaf apikey telah mencapai batas.'))
 break
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
 					.then(({data}) => {
-						XeonBotInc.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
+						XeonBotInc.sendImageAsSticker(m.chat, data.url, fkontak, { packname: global.packname, author: global.author })
 					})
 					break
 case 'loli-waifu':
