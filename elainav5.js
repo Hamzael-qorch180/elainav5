@@ -423,7 +423,28 @@ message: {
 "businessOwnerJid": `0@s.whatsapp.net`
 }
 }
-} 
+}
+//Auto Responder
+if (budy == "Assalamualaikum" || budy == "assalamualaikum" || budy === "ass.." || budy == "assalam" || budy == "assalamualaikumm" || budy == "Ass..")
+XeonBotInc.sendMessage(from, { text: `Waalaikumsalam❤`, quoted: fkontak})
+if (budy == "Halo" || budy == "halo" || budy == "haloo" || budy == "haii" || budy == "heyy" || budy == "hayy" || budy == "hello" || budy == "Hello" || budy == "aloo" || budy == "Aloo" || budy == "elloo" || budy == "eyyo")
+XeonBotInc.sendMessage(from, { text: `Haloo jugaa❤`, quoted: fkontak})
+if (budy == "Woi" || budy == "woi" || budy == "woii" || budy == "WOI" || budy == "tayoo")
+XeonBotInc.sendMessage(from, { text: `hey tayo`, quoted: fkontak})
+if (budy == "Anjay" || budy == "anjay" || budy = "anjay mabar hayyuk" || budy == "anjayy" || budy == "Anjayy" || budy == "wanjay")
+XeonBotInc.sendMessage(from, { text: `yhaha hayyuk`, quoted: fkontak})
+if (budy == "Bott" || budy == "bott" || budy == "ngab" || budy == "coy" || budy == "Bro" || budy == "bro" || budy == "Ngab" || budy == "Coy" || budy == "cuy")
+XeonBotInc.sendMessage(from, { text: `nandayo?`, quoted: fkontak})
+if (budy == "ara-ara" || budy == "Ara-Ara" || budy == "araa-ara")
+XeonBotInc.sendMessage(from, { text: `Kyaaa ><`, quoted: fkontak})
+if (budy == "gaje" || budy == "Gaje" || budy == "gajelass" || budy == "gajelas" || budy == "Gajelas" || budy == "Gajelass")
+XeonBotInc.sendMessage(from, { text: `siapa? yang nanya.`, quoted: fkontak})
+if (budy == "apaa" || budy == "Apa" || budy == "aoa" || budy == "apah" || budy == "kenapa")
+XeonBotInc.sendMessage(from, { text: `gapapa sih, gajadi`, quoted: fkontak})
+if (budy == "ppp" || budy == "pp" || budy == "p")
+XeonBotInc.sendMessage(from, { text: `apaa`, quoted: fkontak})
+if (budy == "yoo" || budy == "Yoo")
+XeonBotInc.sendMessage(from, { text: `yooo!`, quoted: fkontak})
 //FAKEREPLY TROLI
 const ftroli = {
 key : {
@@ -11720,7 +11741,7 @@ replay('Choose on or off')
 }
 }
 break
-            case 'ping': case 'p': case 'botstatus': case 'statusbot': {
+            case 'ping': case 'botstatus': case 'statusbot': {
             	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 const mekik4 = fs.readFileSync('./XeonMedia/image/menuacc.jpg')
