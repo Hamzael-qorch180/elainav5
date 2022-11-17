@@ -86,7 +86,7 @@ Donate me if you want :)
 | **Auto Read GC&PC** |[✔️](https://github.com/RavensVenix) |
 | **Auto Read SW** |[✔️](https://github.com/RavensVenix) |
 | **Hijack / Culik** |[✔️](https://github.com/RavensVenix) |
-| **Bugs | Virus** |[✔️](https://github.com/RavensVenix) |
+| **Bugs / Virus** |[✔️](https://github.com/RavensVenix) |
 | **Auto Responder** |[✔️](https://github.com/RavensVenix) |
 | **Anti toxic** |[✔️](https://github.com/RavensVenix) |
 | **Anti Link** |[✔️](https://github.com/RavensVenix) |
