@@ -32,6 +32,9 @@
 <h3 align="center">Made by :</h3>
 <p align="center">
   <a href="https://github.com/RavensVenix"><img src="https://github.com/RavensVenix.png?size=128" height="128" width="128" /></a>
+    </p>
+    <h3 align="center">Original Base :</h3>
+<p align="center">
   <a href="https://github.com/DGXeon"><img src="https://github.com/DGXeon.png?size=128" height="128" width="128" /></a>
 </p>
 
