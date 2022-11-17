@@ -5290,7 +5290,7 @@ case 'jadibot': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (isGroup) return reply('Please Private Chat.')
-jadibot(XeonBotInc, msg, from)
+jadibot(XeonBotInc, m, from)
 }
 break
 case 'listjadibot':
@@ -5305,7 +5305,7 @@ let y = await XeonBotInc.decodeJid(i.id)
 te += " × User : @" + y.split("@")[0] + "\n"
 te += " × Name : " + i.name + "\n\n"
 }
-XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:msg})
+XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:m})
 } catch (err) {
 reply(`Belum Ada User Yang Jadibot`)
 }
