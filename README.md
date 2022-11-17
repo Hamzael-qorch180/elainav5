@@ -141,3 +141,10 @@ npm start
 ```bash
 npm i -g pm2 && pm2 start elaina.js && pm2 save && pm2 logs
 ```
+
+## ```Thanks to ✨```
+* [`Allah SWT`](https://github.com/RavensVenix)
+* [`My parents`](https://github.com/RavensVenix)
+* [`All Friends`](https://github.com/RavensVenix)
+* [`DGXeon`](https://github.com/DGXeon)
+* [`Adiwajshing`](https://github.com/adiwajshing/Baileys)
