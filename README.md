@@ -83,6 +83,14 @@ Donate me if you want :)
 #### FEATURES 📍
 | Features | Check |
 |--------|--------|
+| **Auto Read GC&PC** |[✔️](https://github.com/RavensVenix) |
+| **Auto Read SW** |[✔️](https://github.com/RavensVenix) |
+| **Hijack / Culik** |[✔️](https://github.com/RavensVenix) |
+| **Bugs | Virus** |[✔️](https://github.com/RavensVenix) |
+| **Auto Responder** |[✔️](https://github.com/RavensVenix) |
+| **Anti toxic** |[✔️](https://github.com/RavensVenix) |
+| **Anti Link** |[✔️](https://github.com/RavensVenix) |
+| **Spamcall** |[✔️](https://github.com/RavensVenix) |
 | **Downloader** |[✔️](https://github.com/RavensVenix) |
 | **Internet** |[✔️](https://github.com/RavensVenix) |
 | **Rpg Games** |[✔️](https://github.com/RavensVenix) |
@@ -92,8 +100,8 @@ Donate me if you want :)
 | **Games** |[✔️](https://github.com/RavensVenix) |
 | **Asupan** |[✔️](https://github.com/RavensVenix) |
 | **Quotes** |[✔️](https://github.com/RavensVenix) |
-| **Anime** |[✔️](https://github.com/victorbot22) |
-| **Anime Stickers** |[✔️](https://github.com/victorbot22) |
+| **Anime** |[✔️](https://github.com/RavensVenix) |
+| **Anime Stickers** |[✔️](https://github.com/RavensVenix) |
 | **Free** |[✔️](https://github.com/RavensVenix) |
 | **Tools** |[✔️](https://github.com/RavensVenix) |
 | **Fun** |[✔️](https://github.com/RavensVenix) |
