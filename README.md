@@ -71,6 +71,35 @@ Donate me if you want :)
 
 - [`BOT SUPPORT GROUP`](https://chat.whatsapp.com/E7d7j8RzW9lCVn1xS6UEjx)
 
+#### ADVANTAGES round_pushpin
+| Advantages | Check |
+|--------|--------|
+| **Fast Response** |[✔️](https://github.com/RavensVenix) |
+| **No Internet** |[✔️](https://github.com/RavensVenix) |
+| **Simple** |[✔️](https://github.com/RavensVenix) |
+| **Button template** |[✔️](https://github.com/RavensVenix) |
+| **Multi Device** |[✔️](https://github.com/RavensVenix) |
+---------
+#### FEATURES round_pushpin
+| Features | Check |
+|--------|--------|
+| **Downloader** |[✔️](https://github.com/RavensVenix) |
+| **Internet** |[✔️](https://github.com/RavensVenix) |
+| **Rpg Games** |[✔️](https://github.com/RavensVenix) |
+| **Nsfw** |[✔️](https://github.com/RavensVenix) |
+| **Sfw** |[✔️](https://github.com/RavensVenix) |
+| **Stickers** |[✔️](https://github.com/RavensVenix) |
+| **Games** |[✔️](https://github.com/RavensVenix) |
+| **Asupan** |[✔️](https://github.com/RavensVenix) |
+| **Quotes** |[✔️](https://github.com/RavensVenix) |
+| **Anime** |[✔️](https://github.com/victorbot22) |
+| **Anime Stickers** |[✔️](https://github.com/victorbot22) |
+| **Free** |[✔️](https://github.com/RavensVenix) |
+| **Tools** |[✔️](https://github.com/RavensVenix) |
+| **Fun** |[✔️](https://github.com/RavensVenix) |
+| **React** |[✔️](https://github.com/RavensVenix) |
+---------
+
 # Setup For Deployment 👇
 
 - [FORK THIS REPO & GIVE A STARS](https://github.com/RavensVenix/elainav5/fork)
