@@ -23,8 +23,8 @@
 </p>
 <p align='center'>
     - CHANGELOG -
-    V5 - UNNAMED
-    I FORGOR
+    V5 - OBFUSCATED
+    SORRY BUT I NEED TO DO THIS.
     </p>
 
 -------
