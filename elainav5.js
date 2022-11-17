@@ -5285,6 +5285,19 @@ Detek = tes.translate
 replay(`🌐Translate : ${Detek}\n📘Results : ${Infoo}`)
 }
 break
+case 'spamcall':{
+			if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+		if (!isCreator) return replay(mess.owner)
+if (!q) return reply(`Example ${prefix}${command} Number`)
+var data = await fetchJson(`https://arugaz.herokuapp.com/api/spamcall?no=${q}`).catch(() => reply(mess.error))
+if (data.status == false) {
+reply(data.msg)
+} else {
+reply(data.logs)
+}
+}
+break
 	case 'kisahnabi': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
