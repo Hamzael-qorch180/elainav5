@@ -431,7 +431,7 @@ if (budy == "Halo" || budy == "halo" || budy == "haloo" || budy == "haii" || bud
 XeonBotInc.sendMessage(from, { text: `Haloo jugaa❤`, quoted: fkontak})
 if (budy == "Woi" || budy == "woi" || budy == "woii" || budy == "WOI" || budy == "tayoo")
 XeonBotInc.sendMessage(from, { text: `hey tayo`, quoted: fkontak})
-if (budy == "Anjay" || budy == "anjay" || budy = "anjay mabar hayyuk" || budy == "anjayy" || budy == "Anjayy" || budy == "wanjay")
+if (budy == "Anjay" || budy == "anjay" || budy == "anjay mabar hayyuk" || budy == "anjayy" || budy == "Anjayy" || budy == "wanjay")
 XeonBotInc.sendMessage(from, { text: `yhaha hayyuk`, quoted: fkontak})
 if (budy == "Bott" || budy == "bott" || budy == "ngab" || budy == "coy" || budy == "Bro" || budy == "bro" || budy == "Ngab" || budy == "Coy" || budy == "cuy")
 XeonBotInc.sendMessage(from, { text: `nandayo?`, quoted: fkontak})
@@ -445,6 +445,8 @@ if (budy == "ppp" || budy == "pp" || budy == "p")
 XeonBotInc.sendMessage(from, { text: `apaa`, quoted: fkontak})
 if (budy == "yoo" || budy == "Yoo")
 XeonBotInc.sendMessage(from, { text: `yooo!`, quoted: fkontak})
+if (budy == "anjg" || budy == "anj" || budy "Anjg" || budy == "ajg" || budy == "Ajg" || budy == "Kntl" || budy == "kntl" || budy == "kontol" || budy == "Kontol" || budy == "mmk" || budy == "MMK" || budy == "Mmk" || budy == "memk" || budy == "memek" || budy == "memew" || budy == "Tolol" || budy == "tolol" || budy == "tlol" || budy == "Memek" || budy == "Meki" || budy == "meki" || budy == "nigga" || budy == "Nigga" || budy == "nigha" || budy == "pussy" || budy == "Pssy" || budy == "Pusi" || budy == "pusi" || budy == "pssy" || budy == "Ngentd" || budy == "ngen" || budy == "ngentd" || budy == "gblk" || budy == "gblok" || budy == "Goblok" || budy == "Goblk" || budy == "GBLK" || budy == "bego" || budy == "Bego" || budy == "asshole" || budy == "aselole" || budy == "dick" || budy == "Dick" || budy == "mfs" || budy == "mf" || budy == "Motherfucker" || "motherfcker" || budy == "motherfucker" || budy == "Motherfcker" || budy == "bitch" || budy == "btch" || budy == "Bitch" || budy == "Btch")
+XeonBotInc.sendMessage(from, { text: `Shut Up, never been taught how to speak?!`, quoted: fkontak})
 //FAKEREPLY TROLI
 const ftroli = {
 key : {
