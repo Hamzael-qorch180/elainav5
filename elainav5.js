@@ -74,6 +74,10 @@ const { hentai } = require('./lib/scraper2.js')
 const { stalkff } = require("./lib/stalk-ff")
 const { stalkml } = require("./lib/stalk-ml")
 const { jadibot, listJadibot } = require('./lib/jadibot')
+// database virtex
+const { philipss } = require('./lib/virtex/philips')
+const { viruss } = require('./lib/virtex/virus')
+const { ngazaap } = require('./lib/virtex/ngazap')
 virgamm = fs.readFileSync(`./src/virgam yg ganas.jpeg`)
 virgam = fs.readFileSync(`./virus/image/deden.jpeg`)
 moment.tz.setDefault('Asia/Jakarta').locale("id");
@@ -5286,17 +5290,31 @@ Detek = tes.translate
 replay(`🌐Translate : ${Detek}\n📘Results : ${Infoo}`)
 }
 break
+case 'fitnah':
+if (!m.isGroup) return replay(mess.group)
+if (!q) return reply(`Example : ${prefix}${command} @tag|messagetarget|messagebot`)
+var org = q.split("|")[0]
+var target = q.split("|")[1]
+var bot = q.split("|")[2]
+if (!org.startsWith('@')) return reply('Tag target!')
+if (!target) return reply(`Message Target?`)
+if (!bot) return reply(`MEssage Bot?`)
+var mens = parseMention(target)
+var msg1 = { key: { fromMe: false, participant: `${parseMention(org)}`, remoteJid: from ? from : '' }, message: { extemdedTextMessage: { text: `${target}`, contextInfo: { mentionedJid: mens }}}}
+var msg2 = { key: { fromMe: false, participant: `${parseMention(org)}`, remoteJid: from ? from : '' }, message: { conversation: `${target}` }}
+XeonBotInc.sendMessage(from, { text: bot, mentions: mentioned }, { quoted: mens.length > 2 ? msg1 : msg2 })
+break
 case 'jadibot': {
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (isGroup) return reply('Please Private Chat.')
+if (m.isGroup) return replay(mess.group)
 jadibot(XeonBotInc, m, from)
 }
 break
 case 'listjadibot':
 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-if (isGroup) return reply('Please Private Chat.')
+if (m.isGroup) return replay(mess.group)
 try {
 let user = [... new Set([...global.conns.filter(XeonBotInc => XeonBotInc.user).map(XeonBotInc => XeonBotInc.user)])]
 te = "*List Jadibot*\n\n"
@@ -5305,7 +5323,7 @@ let y = await XeonBotInc.decodeJid(i.id)
 te += " × User : @" + y.split("@")[0] + "\n"
 te += " × Name : " + i.name + "\n\n"
 }
-XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:m})
+XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:fkontak})
 } catch (err) {
 reply(`Belum Ada User Yang Jadibot`)
 }
@@ -5314,7 +5332,7 @@ case 'spamcall':{
 			if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!isCreator) return replay(mess.owner)
-if (!q) return reply(`Example ${prefix}${command} Number`)
+if (!q) return reply(`Example : ${prefix}${command} Number`)
 var data = await fetchJson(`https://arugaz.herokuapp.com/api/spamcall?no=${q}`).catch(() => reply(mess.error))
 if (data.status == false) {
 reply(data.msg)
@@ -5323,6 +5341,128 @@ reply(data.logs)
 }
 }
 break
+case 'asuna':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/asuna?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'miku':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/miku?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'yuki':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/yuki?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'hestia':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/hestia?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'tsunade':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/tsunade?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'sasuke':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/sasuke?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'anna':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://api.zeeoneofc.xyz/api/anime/anna?apikey=5Cd8U3tG`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'chitoge':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/chitoge?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'cosplay':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://kannxapi.herokuapp.com/api/randomimage/cosplay`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'elaina':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/elaina?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'emilia':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/emilia?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'gremory':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/gremory?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'kaguya':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/shinomiya?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'kotori':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/kotori?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'cogan':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/cogan2?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'kurumi':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/kurumi?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'mikasa':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/mikasa?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+
+case 'rize':
+m.reply(mess.wait)						
+teks = mess.success
+buffer = `https://revita.herokuapp.com/api/wallpaper/rize?apikey=ApiRevita`
+XeonBotInc.sendMessage(from, {image:{url:buffer}, caption:"Here you go!"}, {quoted:fkontak})
+break
+case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+					axios.get(`https://api.waifu.pics/sfw/${command}`)
+					.then(({data}) => {
+						XeonBotInc.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
+					})
+					break
+case 'loli-waifu':
+					m.reply(mess.wait)
+					axios.get(`https://api.waifu.pics/sfw/waifu`)
+					.then(({data}) => {
+					XeonBotInc.sendImage(m.chat, data.url, mess.success, m)
+					})
+					break
 	case 'kisahnabi': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -12058,6 +12198,7 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}spamsw
 ╠═══════✪「 GROUP 」
 ╠${sp} ${prefix}kudeta
+╠${sp} ${prefix}fitnah
 ╠${sp} ${prefix}creategc
 ╠${sp} ${prefix}listonline	   
 ╠${sp} ${prefix}hijack
@@ -12350,6 +12491,7 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}ffstalker [query]
 ╠${sp} ${prefix}mlstalker [query]
 ╠${sp} ${prefix}getsticker [query]
+╠${sp} ${prefix}cogan
 ╠${sp} ${prefix}cecanindo
 ╠${sp} ${prefix}cecanchina
 ╠${sp} ${prefix}cecanthailand
@@ -12454,6 +12596,27 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}microsoftemoji
 ╠═══════✪「 ANIME 」
 ╠${sp} ${prefix}naruto
+╠${sp} ${prefix}uniform
+╠${sp} ${prefix}asuna
+╠${sp} ${prefix}anna
+╠${sp} ${prefix}chitoge
+╠${sp} ${prefix}cosplay
+╠${sp} ${prefix}elaina
+╠${sp} ${prefix}emilia
+╠${sp} ${prefix}gremory
+╠${sp} ${prefix}kaguya
+╠${sp} ${prefix}kotori
+╠${sp} ${prefix}kurumi
+╠${sp} ${prefix}mikasa
+╠${sp} ${prefix}rize
+╠${sp} ${prefix}maid
+╠${sp} ${prefix}waifu2
+╠${sp} ${prefix}marin
+╠${sp} ${prefix}mori
+╠${sp} ${prefix}raiden
+╠${sp} ${prefix}oppai
+╠${sp} ${prefix}selfies
+╠${sp} ${prefix}loli-waifu
 ╠${sp} ${prefix}animeme
 ╠${sp} ${prefix}shota
 ╠${sp} ${prefix}nekogirl
@@ -12543,15 +12706,6 @@ kocak2 = (`╔═══════✪「 OWNER 」
 ╠${sp} ${prefix}cringe
 ╠${sp} ${prefix}neko
 ╠${sp} ${prefix}gura
-╠═══════✪「 SFW 」
-╠${sp} ${prefix}uniform
-╠${sp} ${prefix}maid
-╠${sp} ${prefix}waifu2
-╠${sp} ${prefix}marin
-╠${sp} ${prefix}mori
-╠${sp} ${prefix}raiden
-╠${sp} ${prefix}oppai
-╠${sp} ${prefix}selfies
 ╠═══════✪「 NSFW 」
 ╠${sp} ${prefix}bokep
 ╠${sp} ${prefix}bokep2
