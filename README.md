@@ -24,8 +24,11 @@
 <p align='center'>
 <img src="https://telegra.ph/file/715259342d27cc48c11e1.jpg?size=1000" height="428" width="428" />
     </p>
+-------
+
 ### Changelog
 OBFUSCATED - SORRY BUT I NEED TO DO THIS.
+
 -------
 
 <h3 align="center">Made by :</h3>
