@@ -95,6 +95,10 @@ Donate me if you want :)
 | **Anti Link** |[✔️](https://github.com/RavensVenix) |
 | **Spamcall** |[✔️](https://github.com/RavensVenix) |
 | **Downloader** |[✔️](https://github.com/RavensVenix) |
+| **Religions Menu** |[✔️](https://github.com/RavensVenix) |
+| **Welcome / Leave** |[✔️](https://github.com/RavensVenix) |
+| **Berita / News** |[✔️](https://github.com/RavensVenix) |
+| **Memes / Jokes** |[✔️](https://github.com/RavensVenix) |
 | **Internet** |[✔️](https://github.com/RavensVenix) |
 | **Rpg Games** |[✔️](https://github.com/RavensVenix) |
 | **Nsfw** |[✔️](https://github.com/RavensVenix) |
