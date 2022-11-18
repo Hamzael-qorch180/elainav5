@@ -84,6 +84,8 @@ Donate me if you want :)
 | **Multi Device** |[✔️](https://github.com/RavensVenix) |
 ---------
 #### FEATURES 📍
+| Some features may use english and indonesia language |
+| Total features 900+, the box below is only interesting features | 
 | Features | Check |
 |--------|--------|
 | **Auto Read GC&PC** |[✔️](https://github.com/RavensVenix) |
