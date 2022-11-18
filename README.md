@@ -23,9 +23,9 @@
 </p>
 <p align='center'>
 <img src="https://telegra.ph/file/715259342d27cc48c11e1.jpg?size=1000" height="428" width="428" />
-    - CHANGELOG -
-    V5 - OBFUSCATED
-    SORRY BUT I NEED TO DO THIS.
+    \n- CHANGELOG -
+    \nV5 - OBFUSCATED
+    \nSORRY BUT I NEED TO DO THIS.
     </p>
 
 -------
