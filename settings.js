@@ -39,27 +39,27 @@ ckey = 'xPxsaElx'
 global.vcardowner = ['6281338302495'], ['6285338440313'] //number
 global.allpay = "081338302495" // nomor pertama / first number donate
 global.allpay2 = "085338440313" // nomor ke dua /second number donate
-global.ownername = "⚘xʏʟᴀᴀ♱" //owner
-global.email = "📧 vynx14u@gmail.com" //email
-global.website = "⚙️ Github : RavensVenix" //github name
+global.ownername = "ii324" //owner
+global.email = "📧alma61475@gmail.com" //email
+global.website = "⚙️" //github name
 global.location = "🌍 Isekai, Taman Hiburan Para Loli, Pemandian Umum Wanita" //location
-global.roblox = "👾 Roblox : @JustRyyXD" //roblox
-global.ig = "👑 Instagram : @ravensvenix" //insta
-global.tg = "💙 Telegram : @vmxone" //telegram
+global.roblox = "👾" //roblox
+global.ig = "👑 " //insta
+global.tg = "💙 " //telegram
 
 //bot bomdy 
 global.owner = ['6281338302495'], ['6285338440313']
-global.ownernomer = "6281338302495" //ur number
-global.ownertag = '6281338302495' //ur tag number
+global.ownernomer = "0201060715493" //ur number
+global.ownertag = '0201060715493' //ur tag number
 global.botname = '⚘xʏʟᴀᴀ♱' //ur bot name
 global.linkz = "https://chat.whatsapp.com/E7d7j8RzW9lCVn1xS6UEjx" //your theme url which will be displayed on whatsapp
 global.websitex = "https://chat.whatsapp.com/E7d7j8RzW9lCVn1xS6UEjx" //ur website to be displayed
 global.botscript = 'https://github.com/RavensVenix/elainav5' //script link
 global.reactmoji = "🦋" //ur menu react emoji
 global.themeemoji = "🦋" //ur theme emoji
-global.packname = "⚘xʏʟᴀᴀ♱\n\n\n\n\n\n\n\n\n\n\n• StickerPack " //ur sticker watermark packname
-global.author = "⚘xʏʟᴀᴀ♱" //ur sticker watermark author
-global.wm = "⚘xʏʟᴀᴀ♱" //ur watermark
+global.packname = "ii324\n\n\n\n\n\n\n\n\n\n\n• StickerPack " //ur sticker watermark packname
+global.author = "ii324" //ur sticker watermark author
+global.wm = "ii324" //ur watermark
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/thumb.jpeg") //ur thumb pic
